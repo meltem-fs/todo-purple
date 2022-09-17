@@ -9,7 +9,21 @@
     padding: 0 1rem;
     margin-bottom: 1rem;
     margin: 2rem auto;
+    font-size: 1.2rem;
+    animation: res 1s ease-in-out
 }
+
+@keyframes res {
+    70%{ 
+        transform: rotateX(90deg);
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
+   
+
+}
+
 
 .container{
    background-color: purple;
@@ -41,3 +55,16 @@
 .btn:hover{
     background-color: rgb(220, 206, 249);
 }
+
+.check p{
+ text-decoration: line-through;
+ color: purple;
+}
+.check{
+    background-color: rgb(42, 3, 84);
+}
+
+.fa-check{
+    color: rgb(144, 5, 172);
+}
+

@@ -14,6 +14,7 @@ btn.addEventListener("click",() => {
         <i class="fa-sharp fa-solid fa-trash-can"></i>
      </div> `;
     }
+    
     text.value =""
 })
 
@@ -33,10 +34,15 @@ results.addEventListener("click", (e) => {
     if (e.target.classList.contains("fa-square")) {
       e.target.classList.remove("fa-square", "fa-regular");
       e.target.classList.add("fa-solid", "fa-check");
+      e.target.parentElement.classList.add("check")
       
-    } else if (e.target.classList.contains("fa-solid")) {
+    } else if (e.target.classList.contains("fa-check")) {
       e.target.classList.remove("fa-solid", "fa-check");
       e.target.classList.add("fa-square", "fa-regular");
-      
+      e.target.parentElement.classList.remove("check");
+
+    } else if(e.target.classList.contains("fa-sharp")){
+        console.log(e.target);
+        e.target.parentElement.remove()
     }
 })

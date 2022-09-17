@@ -1,0 +1,43 @@
+.result{
+    display: flex;
+    width: 29rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(220, 144, 241);
+    color: purple;
+    border-radius: 20px;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    margin: 2rem auto;
+}
+
+.container{
+   background-color: purple;
+   color: lavender;
+   text-align: center;
+   width: 40rem;
+   margin: 2rem auto;
+   padding: 2rem 0;
+   border-radius: 30px;
+}
+
+.input{
+    display: flex;
+    justify-content: space-between;
+    width: 30rem;
+    margin: 0 auto;
+}
+.input .text{
+    width: 75%;
+    font-size: medium;
+}
+.btn{
+    padding:0.6rem 2rem;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 1px 1px 5px purple;
+    background-color: rgb(210, 195, 250);
+}
+.btn:hover{
+    background-color: rgb(220, 206, 249);
+}

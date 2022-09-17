@@ -1,16 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+
 .result{
+      
     display: flex;
-    width: 29rem;
+    width: 30rem;
     justify-content: space-between;
     align-items: center;
     background-color:rgb(220, 144, 241);
     color: purple;
     border-radius: 20px;
-    padding: 0 1rem;
-    margin-bottom: 1rem;
+    padding: 0.8rem 1.2rem;
     margin: 2rem auto;
     font-size: 1.2rem;
-    animation: res 1s ease-in-out
+    animation: res 1s ease-in-out;
+}
+
+.result:hover{
+    box-shadow:1px 1px 7px 1px rgb(177, 94, 177); 
 }
 
 @keyframes res {
@@ -26,13 +38,17 @@
 
 
 .container{
+   background-image: url(./11040296.jpg);
    background-color: purple;
    color: lavender;
    text-align: center;
    width: 40rem;
-   margin: 2rem auto;
+   margin: 0 auto;
    padding: 2rem 0;
    border-radius: 30px;
+}
+h1{
+    margin-bottom: 1rem;
 }
 
 .input{
@@ -41,9 +57,14 @@
     width: 30rem;
     margin: 0 auto;
 }
-.input .text{
+.text{
     width: 75%;
     font-size: medium;
+    padding: 0.8rem 0.2rem;
+    border-radius: 10px;
+}
+i:hover{
+    opacity: 0.8;
 }
 .btn{
     padding:0.6rem 2rem;
@@ -54,17 +75,18 @@
 }
 .btn:hover{
     background-color: rgb(220, 206, 249);
+    box-shadow: 1px 1px 2px 1px rgb(247, 204, 204);
 }
 
 .check p{
  text-decoration: line-through;
- color: purple;
 }
 .check{
-    background-color: rgb(42, 3, 84);
+    background-color:rgba(217, 129, 241, 0.578);
+     color: rgb(245, 163, 245);
 }
 
 .fa-check{
-    color: rgb(144, 5, 172);
+    color: rgb(243, 212, 238);
 }
 

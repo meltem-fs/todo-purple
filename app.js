@@ -5,7 +5,7 @@ const results = document.querySelector(".results");
 
 btn.addEventListener("click",() => {
     if(!text.value){
-        alert("write sth")
+        alert("please write a to do")
     }else{
         results.innerHTML += `<div class="result">
        <i class="fa-regular fa-square"></i>
@@ -14,7 +14,7 @@ btn.addEventListener("click",() => {
         <i class="fa-sharp fa-solid fa-trash-can"></i>
      </div> `;
     }
-    
+
     text.value =""
 })
 
